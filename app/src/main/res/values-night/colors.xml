@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color	name="colorPrimary">#d14d62</color>
+    <color	name="colorPrimaryDark">#d14d62</color>
+    <color	name="colorAccent">#d14d62</color>
+    <color	name="colorControlHighlight">#F48FB1</color>
+    <color	name="colorControlNormal">#d14d62</color>
+
+
+    <!--color name="colorPrimary">#3F51B5</color-->
+    <!--color name="colorPrimaryDark">#303F9F</color-->
+    <!--color name="colorAccent">#FF4081</color-->
+    <color name="pink">#E3556B</color>
+    <color name="pinkDark">#d14d62</color>
+    <color name="daynight_textColor">#E3556B</color>
+    <color name="bgDayNight">#FF263238</color>
+    <color name="switchColor">#E3556B</color>
+</resources>
