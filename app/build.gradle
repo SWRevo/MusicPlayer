@@ -6,16 +6,16 @@ apply plugin: 'kotlin-android'
 android {
     signingConfigs {
         debug {
-            storeFile file('D:\\indoSW.jks')
-            storePassword '@Hfisandi190988*'
-            keyAlias 'indoSW'
-            keyPassword '@Hfisandi190988*'
+            storeFile file('D:\\KeyStore.jks')
+            storePassword 'yourpassword'
+            keyAlias 'yourAliasKey'
+            keyPassword 'yourpassword'
         }
         release {
-            storeFile file('D:\\indoSW.jks')
-            storePassword '@Hfisandi190988*'
-            keyAlias 'indoSW'
-            keyPassword '@Hfisandi190988*'
+            storeFile file('D:\\KeyStore.jks')
+            storePassword 'yourpassword'
+            keyAlias 'yourAliasKey'
+            keyPassword 'yourpassword'
         }
     }
     compileSdkVersion 30
