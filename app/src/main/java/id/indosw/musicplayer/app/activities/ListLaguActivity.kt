@@ -19,6 +19,7 @@ import com.androidnetworking.common.Priority
 import com.androidnetworking.error.ANError
 import com.androidnetworking.interfaces.JSONObjectRequestListener
 import id.indosw.musicplayer.R
+import id.indosw.musicplayer.app.`interface`.InterfaceOnSelected
 import id.indosw.musicplayer.app.adapter.ListLaguAdapter
 import id.indosw.musicplayer.app.model.ModelListLagu
 import id.indosw.musicplayer.app.networking.Api
@@ -27,7 +28,7 @@ import org.json.JSONObject
 import java.util.*
 
 @Suppress("DEPRECATION")
-class ListLaguActivity : AppCompatActivity(), ListLaguAdapter.onSelectData {
+class ListLaguActivity : AppCompatActivity(), InterfaceOnSelected {
 
     private var listLaguAdapter: ListLaguAdapter? = null
     var progressDialog: ProgressDialog? = null
@@ -107,7 +108,7 @@ class ListLaguActivity : AppCompatActivity(), ListLaguAdapter.onSelectData {
     }
 
     //send data to activity Detail Lagu
-    override fun onSelected(modelListLagu: ModelListLagu) {
+    override fun onSelected(modelListLagu: ModelListLagu?) {
         val intent = Intent(this@ListLaguActivity, DetailLaguActivity::class.java)
         intent.putExtra("detailLagu", modelListLagu)
         startActivity(intent)
